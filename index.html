@@ -1143,7 +1143,7 @@
   <code>
 :MessageShape a  sh:NodeShape;
     sh:targetClass schema:Message;
-    sh:targetObjectsOf meeeting:message;  # No can be other things
+    sh:targetObjectsOf meeting:message;  # No can be other things
     sh:closed false ; # different message systems may have all kinds of metadata 
 
     sh:property [
@@ -1260,7 +1260,7 @@ Normal reply to this should be done right""";
     sioc:id <matrix:///e/HxuJZPg18me8iX8sB18Nb2Oo9ObJwMLS7GRoJUfDV_Y>;
     foaf:maker ind:this.
 
-n4:this wf:message
+n4:this meeting:message
         :HxuJZPg18me8iX8sB18Nb2Oo9ObJwMLS7GRoJUfDV_Y,
         :YclVtjeT3mfFu-bD-XKbsKpRsaPaEW_7JCQVBEOCWvY.
 </code>
@@ -1419,7 +1419,7 @@ resource="#deletedexample"
     schema:dateDeleted "2023-08-24T13:27:57Z"^^xsd:dateTime;
     foaf:maker c22:me.
 
-n6:this wf:message :Msg1692883560076 .
+n6:this meeting:message :Msg1692883560076 .
 </code>
 </pre>
 </figure>            
@@ -1535,21 +1535,21 @@ resource="#preferencesExample"
 
 :this a meeting:LongChat;
     dct:author c1:me;
-    dct:created "2018-07-06T21:36:04Z"^^XML:dateTime;
+    dct:created "2018-07-06T21:36:04Z"^^xsd:dateTime;
     dct:title "Our Chat channel";
 
     wf:participation
         :id1530912972126, :id1538415256782, :id1538415459106 .
   
         :id1530912972126
-            ic:dtstart "2018-07-06T21:36:12Z"^^XML:dateTime;
-            flow:participant c1:me;
+            cal:dtstart "2018-07-06T21:36:12Z"^^xsd:dateTime;
+            wf:participant c1:me;
             solid:expandImagesInline true;
             ui:backgroundColor "#c1d0c8".
   
         :id1538415256782
-            ic:dtstart "2018-07-07T11:16:12Z"^^XML:dateTime;
-            flow:participant c2:me;
+            cal:dtstart "2018-07-07T11:16:12Z"^^xsd:dateTime;
+            wf:participant c2:me;
             solid:expandImagesInline false;
             ui:backgroundColor "#ffccdd".
 

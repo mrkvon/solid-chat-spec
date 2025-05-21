@@ -1,9 +1,9 @@
 @prefix : <#>.
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix meeting: <http://www.w3.org/ns/pim/meeting#>.
 @prefix schema: <http://schema.org/>.
 @prefix sioc: <http://rdfs.org/sioc/ns#>.
-@prefix wf: <http://www.w3.org/2005/01/wf/flow#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix ch: <../20/chat.ttl#>.
 @prefix n4: <../../../index.ttl#>.
@@ -80,7 +80,7 @@ Reply D to A1 edited""";
     sioc:id <matrix:///e/xJXNxZXvuph1OdysyC0Is_9cX2IKmKgN5xxCbnWjW-k>;
     foaf:maker ind:this.
 n4:this
-    wf:message
+    meeting:message
         :47vi3j5ixcwDTMYevX6VepZoq_DKhLlNaf4SR4mJmqQ,
         :bNGquK6W8jCsnw1OPgjHl6GcHSvidMR9rD8nH1MjePs,
         :DI0tRhwu8HMb_SXqeZi1JYZUq9qFdaFawQn7c63h5vE,
