@@ -1,8 +1,8 @@
 @prefix : <#>.
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix meeting: <http://www.w3.org/ns/pim/meeting#>.
 @prefix sioc: <http://rdfs.org/sioc/ns#>.
+@prefix wf: <http://www.w3.org/2005/01/wf/flow#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix ch: <../25/chat.ttl#>.
 @prefix n2: <../../../../../Person/timbl-54d26c98db8155e6700f7312%3Agitter.im/index.ttl#>.
@@ -64,7 +64,7 @@ B a reply to A""";
 ch:DI0tRhwu8HMb_SXqeZi1JYZUq9qFdaFawQn7c63h5vE
 sioc:has_reply :GVu4AdmzBFnQvuLRvX0e8wc6oNOPdV0ki_qcJjDdbzk.
 n3:this
-    meeting:message
+    wf:message
         :2Bw5IeK9IeHnVNtzkOgAovUFix49JaociYdTO6G-F3w,
         :8a4hxwxSNaNTb5bv6oTCswcBNW7zvXc8inaoBWBM9Ro,
         :bqp11ZmhhAGmwXLt8evvjyoI4Z8vs08agOqcdA0fy6A,

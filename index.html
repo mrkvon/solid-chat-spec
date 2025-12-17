@@ -1120,7 +1120,7 @@
               typeof="fabio:Script"
             >
               <code>
-                <../../../index.ttl#this> meeting:message :message95487593 .
+                <../../../index.ttl#this> wf:message :message95487593 .
             :message95487593
                 dct:created "2023-02-20T21:36:09Z"^^xsd:dateTime;
                 sioc:content """Hello world!""";
@@ -1129,7 +1129,7 @@
             </pre>
           </figure>
           <p class="note">Note that each message does not have an explicit type.  This is just to save storage.
-            It does have, in the chat file, a <code>meeting:message</code> link from the channel to the message.
+            It does have, in the chat file, a <code>wf:message</code> link from the channel to the message.
             In the shapes, we use the class <code>schema:Message</code> but while there was also <code>sioc:Post</code>, nothing
             we could find seemed to capture Chat Message perfectly.
           </p>
@@ -1143,7 +1143,7 @@
   <code>
 :MessageShape a  sh:NodeShape;
     sh:targetClass schema:Message;
-    sh:targetObjectsOf meeting:message;  # No can be other things
+    sh:targetObjectsOf wf:message;  # No can be other things
     sh:closed false ; # different message systems may have all kinds of metadata 
 
     sh:property [
@@ -1182,7 +1182,7 @@
 	];
 
   sh:property [
-		sh:path [ sh:inverse meeting:message ] ;
+		sh:path [ sh:inverse wf:message ] ;
         sh:message "A chat message should know its chat channel.";
         sh:maxCount 1;
         sh:dataType meeting:LongChat;
@@ -1200,7 +1200,7 @@
   <tr><td>dct:isReplacedBy</td><td>Message editing is discussed below</td></tr>
   <tr><td>schema:dateDeleted</td><td>Message deletion is discussed below</td></tr>
   <tr><td>sioc:has_reply</td><td>Replies and threads are discussed below</td></tr>
-  <tr><td>Reverse meeting:message</td><td>Points from the chat channel to the message</td></tr>
+  <tr><td>Reverse wf:message</td><td>Points from the chat channel to the message</td></tr>
 </table>
 
 <p>When writing a chat message to a chat file, an interactive chat client must use an HTTP <code>PATCH</code> method.
@@ -1260,7 +1260,7 @@ Normal reply to this should be done right""";
     sioc:id <matrix:///e/HxuJZPg18me8iX8sB18Nb2Oo9ObJwMLS7GRoJUfDV_Y>;
     foaf:maker ind:this.
 
-n4:this meeting:message
+n4:this wf:message
         :HxuJZPg18me8iX8sB18Nb2Oo9ObJwMLS7GRoJUfDV_Y,
         :YclVtjeT3mfFu-bD-XKbsKpRsaPaEW_7JCQVBEOCWvY.
 </code>
@@ -1419,7 +1419,7 @@ resource="#deletedexample"
     schema:dateDeleted "2023-08-24T13:27:57Z"^^xsd:dateTime;
     foaf:maker c22:me.
 
-n6:this meeting:message :Msg1692883560076 .
+n6:this wf:message :Msg1692883560076 .
 </code>
 </pre>
 </figure>            
